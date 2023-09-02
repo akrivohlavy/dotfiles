@@ -1,0 +1,26 @@
+[core]
+	autocrlf = input
+[user]
+	name = "Antonín Křivohlavý"
+	email = "antonin.krivohlavy@gmail.com"
+[push]
+	default = upstream
+[branch]
+	autosetuprebase = always
+[color "decorate"]
+	tag = red
+	HEAD = cyan
+[pretty]
+	color = tformat:%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold tru)<%an%Creset
+[alias]
+	lg = log --pretty=color
+	lgg = log --graph --pretty=color
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[includeIf "gitdir:~/pure/"]
+	path = ~/pure/.gitconfig

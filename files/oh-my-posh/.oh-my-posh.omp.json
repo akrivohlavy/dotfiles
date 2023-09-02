@@ -1,0 +1,89 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "foreground": "#FFEE58",
+                    "style": "plain",
+                    "template": " \uf0e7 ",
+                    "type": "root"
+                },
+                {
+                    "foreground": "#ffffff",
+                    "style": "plain",
+                    "template": " {{ .UserName }} ",
+                    "type": "session"
+                },
+                {
+                    "background": "#91ddff",
+                    "foreground": "#100e23",
+                    "powerline_symbol": "\ue0b0",
+                    "properties": {
+                        "style": "full"
+                    },
+                    "style": "powerline",
+                    "template": " {{ .Path }} ",
+                    "type": "path"
+                },
+                {
+                    "type": "aws",
+                    "style": "powerline",
+                    "powerline_symbol": "\ue0b0",
+                    "foreground": "#ffffff",
+                    "background": "#FFA400",
+                    "template": "  {{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
+                },
+                {
+                    "type": "az",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#000000",
+                    "background": "#9ec3f0",
+                    "template": " ﴃ {{ .EnvironmentName }}"
+                },
+                {
+                    "type": "kubectl",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#000000",
+                    "background": "#ebcc34",
+                    "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+                    "properties": {
+                        "context_aliases": {
+                            "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
+                        }
+                    }
+                },
+                {
+                    "background": "#95ffa4",
+                    "foreground": "#193549",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " {{ .HEAD }} ",
+                    "type": "git"
+                },
+                {
+                    "background": "#906cff",
+                    "foreground": "#100e23",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+                    "type": "python"
+                },
+                {
+                    "background": "#ff8080",
+                    "foreground": "#ffffff",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " \ue20f ",
+                    "type": "status"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "final_space": true,
+    "version": 2
+}
