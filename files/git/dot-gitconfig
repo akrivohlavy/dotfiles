@@ -15,12 +15,7 @@
 [alias]
 	lg = log --pretty=color
 	lgg = log --graph --pretty=color
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+
 
 [includeIf "gitdir:~/pure/"]
 	path = ~/pure/.gitconfig

@@ -26,6 +26,7 @@ stow:
 	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)" --dir="$(DOTFILES_DIR)/files" oh-my-posh
 	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)" --dir="$(DOTFILES_DIR)/files" --dotfiles git
 
+# TODO: gpg signature gitconfig
 # TODO: zshrc
 # TODO: aws-select
 # TODO: set tmux as default command when opening terminal (`defaults` CLI: ~/Library/Preferences/com.apple.Terminal.plist)

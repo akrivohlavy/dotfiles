@@ -2,12 +2,15 @@ cask_args appdir: '/Applications'
 
 tap "derailed/k9s"
 
+cask "docker"
+
 brew "awscli"
 brew "fzf"
 brew "golang"
 brew "golangci-lint"
 brew "htop"
 brew "httpie"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 brew "jq"
 brew "kind"
 brew "kubectx"
@@ -15,4 +18,3 @@ brew "neovim"
 brew "tmux"
 brew "tree"
 brew "yq"
-brew "jandedobbeleer/oh-my-posh/oh-my-posh"
