@@ -25,10 +25,12 @@ stow:
 	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)" --dir="$(DOTFILES_DIR)/files" tmux
 	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)" --dir="$(DOTFILES_DIR)/files" oh-my-posh
 	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)" --dir="$(DOTFILES_DIR)/files" --dotfiles git
+	@stow -v --stow --ignore ".DS_Store" --target="$(HOME)/Library/Application Support/k9s" --dir="$(DOTFILES_DIR)/files" k9s
 
 # TODO: gpg signature gitconfig
 # TODO: zshrc
 # TODO: aws-select
+# TODO: Apple.Terminal allow mouse reporting by default
 # TODO: set tmux as default command when opening terminal (`defaults` CLI: ~/Library/Preferences/com.apple.Terminal.plist)
 # TODO: os keyboard shortcuts: launch Terminal, window toggling
 # TODO: VSCode settings
