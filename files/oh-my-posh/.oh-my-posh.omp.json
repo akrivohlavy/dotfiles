@@ -33,7 +33,7 @@
                     "powerline_symbol": "\ue0b0",
                     "foreground": "#ffffff",
                     "background": "#FFA400",
-                    "template": "  {{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
+                    "template": "☁️  {{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
                 },
                 {
                     "type": "az",
@@ -49,7 +49,7 @@
                     "powerline_symbol": "",
                     "foreground": "#000000",
                     "background": "#ebcc34",
-                    "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+                    "template": " ⎈ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
                     "properties": {
                         "context_aliases": {
                             "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
