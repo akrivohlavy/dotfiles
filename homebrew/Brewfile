@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap "derailed/k9s"
 
 cask "docker"
+cask "keepingyouawake"
 
 brew "awscli"
 brew "fzf"
