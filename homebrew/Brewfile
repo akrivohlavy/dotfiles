@@ -4,6 +4,7 @@ tap "derailed/k9s"
 
 cask "docker"
 cask "keepingyouawake"
+cask "postman"
 
 brew "awscli"
 brew "fzf"
