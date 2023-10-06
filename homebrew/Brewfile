@@ -7,6 +7,7 @@ cask "keepingyouawake"
 cask "postman"
 
 brew "awscli"
+brew "azure-cli"
 brew "fzf"
 brew "golang"
 brew "golangci-lint"
