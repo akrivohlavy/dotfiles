@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap "derailed/k9s"
+tap "Azure/kubelogin"
 
 cask "docker"
 cask "keepingyouawake"
@@ -17,6 +18,7 @@ brew "httpie"
 brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 brew "jq"
 brew "kind"
+brew "kubelogin"
 brew "kubectx"
 brew "neovim"
 brew "tmux"

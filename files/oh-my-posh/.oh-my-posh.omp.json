@@ -41,7 +41,7 @@
                     "powerline_symbol": "",
                     "foreground": "#000000",
                     "background": "#9ec3f0",
-                    "template": " ﴃ {{ .EnvironmentName }}"
+                    "template": "⊞ {{ .EnvironmentName }} "
                 },
                 {
                     "type": "kubectl",
