@@ -16,6 +16,5 @@
 	lg = log --pretty=color
 	lgg = log --graph --pretty=color
 
-
-[includeIf "gitdir:~/pure/"]
+[includeIf "gitdir:~/pure"]
 	path = ~/pure/.gitconfig
